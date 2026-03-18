@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link of icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* nav bar*/
+nav{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.5rem 0;
+    z-index: 999;
+    position: sticky;
+}
+/*inner-nav bar*/
+.nav-bar .inner-nav{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:center;
+    margin: 0 2rem;
+}
+/*logo*/
+.nav-bar .inner-nav .logo {
+    text-align: center;
+    inline-size: 160px;
+}
+.inner-nav .logo strong {
+    text-transform: uppercase;   
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:rgb(4, 53, 53); 
+}
+.nav-bar .inner-nav .listing{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 1rem 3rem;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.listing li > a{
+    color:rgb(4, 53, 53);
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 0.5rem;
+    
+}
+.listing li>a:hover{
+    text-decoration: underline;
+    color:rgb(10, 176, 241);
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+.inner-nav .user{
+    background-color: rgb(10, 176, 241,0.20);
+    padding: 1.2rem 1rem;
+    border-radius: 0.8rem;
+    margin-right: 2.5rem;
+}
+.inner-nav .user a{
+        text-transform: capitalize;
+        color:rgb(10, 176, 241);
+        font-size: 1rem;
+        font-weight: 700;
+}
+/*hero-section*/
+main{
+    height: 65vh;
+}
+.hero-section{
+    height:40vw;
+    position:relative;
+}
+.container{
+    margin: 0 7rem;
+}
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+.box .left-part , .right-part{
+    flex-basis: 50%;
+    margin-top: 3rem;
+}
+.box h1{
+    font-weight: 900;
+    font-size: 2.5rem;
+    color:rgb(4, 53, 53);
+    text-transform:capitalize;
+    line-height: 1.5;
+}
+.box .heading{
+    max-width: 70%;
+}
+.box .heading span{
+    color:rgb(10, 176, 241);
+}
+.hero-section .box p{
+    margin-top: 0.4rem;
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color:grey;
+}
+.hero-section .box .paragraph p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    max-width: 80%;
+    line-height: 1.2;
+    color:rgb(4, 53, 53);
+}
+.left-part .booknow{
+    border: none;
+    background-color:rgb(10, 176, 241);
+    padding: 1.2rem 1.8rem;
+    border-radius: 0.8rem;
+    margin-top: 1.5rem;
+}
+.booknow i{
+    color:rgb(238, 249, 253);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.left-part .booknow a{
+    color:rgb(238, 249, 253);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 0.2rem;
+}
+.box .right-part img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+</style>
+  
+    <title>frontend</title>
+</head>
+<body>
+    <header class="primary-header">
+      <!-- Navigation bar -->
+      <nav class="nav-bar">
+        <div class="inner-nav">
+           <!--logo-->
+          <div class="logo">
+           <a href="#">
+            <strong>LOGO</strong>
+           </a>
+          </div>
+          <ul class="listing">
+            <li><a href="/home">home</a></li>
+            <li><a href="/about">about us</a></li>
+            <li><a href="/contact">contact us</a></li>
+          </ul>
+          <div class="user">
+           <a href="http://">username</a>
+          </div>
+       </div>
+      </nav>
+    </header>
+    <!--main section start-->
+    <main>
+     <!-- hero-section start here-->
+      <section class="container hero-section">
+        <div class="box">
+          <div class="left-part">
+            <h1 class="heading">Revitalize your clothes with expert <span>Laundry services!</span></h1>
+            <div class="paragraph">
+             <p class="passage">
+              From premium dry cleaning to swift wash and fold, we deliver care and convenience. Schedule a pickup and rediscover the freshness of your clothes today!
+            </p>
+            <button class="booknow"><i class="fa-solid fa-store"></i>
+              <a href="#booking-section">Book a service today!</a>
+            </button>
+
+            </div>
+          </div> 
+          <div class="right-part">
+            <div class="image">
+                <img src="https://img.freepik.com/free-vector/self-service-laundry-equipment-accessories-cartoon-background-composition-with-washer-folded-clean-bedding-hanging-shirts-vector-illustration_1284-67589.jpg?t=st=1773643542~exp=1773647142~hmac=42470ab26d5418c179ed9ab71501730c879d63ce351382c819cf6351246ca624&w=1480" 
+                alt="Image of washing machine"/> 
+            </div> 
+          </div> 
+      </section>
+    </main> 
+    </body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+                        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+        nav{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.5rem 0;
+    z-index: 999;
+    position: sticky;
+}
+/*inner-nav bar*/
+.nav-bar .inner-nav{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:center;
+    margin: 0 2rem;
+}
+/*logo*/
+.nav-bar .inner-nav .logo {
+    text-align: center;
+    inline-size: 160px;
+}
+.inner-nav .logo strong {
+    text-transform: uppercase;   
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:rgb(4, 53, 53); 
+}
+.nav-bar .inner-nav .listing{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 1rem 3rem;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.listing li > a{
+    color:rgb(4, 53, 53);
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 0.5rem;
+    
+}
+.listing li>a:hover{
+    text-decoration: underline;
+    color:rgb(10, 176, 241);
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+.inner-nav .user{
+    background-color: rgb(10, 176, 241,0.20);
+    padding: 1.2rem 1rem;
+    border-radius: 0.8rem;
+    margin-right: 2.5rem;
+}
+.inner-nav .user a{
+        text-transform: capitalize;
+        color:rgb(10, 176, 241);
+        font-size: 1rem;
+        font-weight: 700;
+}
+        :root {
+    --primary-blue:rgb(10, 176, 241);
+    --bg-light: #f4f7f9;
+    --border-color: #dee2e6;
+    --text-main: #333;
+}
+
+.contact-section {
+    padding: 60px 20px;
+    background-color: var(--bg-light);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+}
+
+.contact-info .section-title {
+    color: var(--primary-blue);
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.info-details {
+    margin-top: 30px;
+}
+
+.info-item {
+    margin-bottom: 20px;
+}
+
+.info-item strong {
+    display: block;
+    color: var(--primary-blue);
+    margin-bottom: 5px;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Crucial for layout */
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 5px rgba(0,123,255,0.2);
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+    </style>
+</head>
+<body>
+     <header class="primary-header">
+      <!-- Navigation bar -->
+      <nav class="nav-bar">
+        <div class="inner-nav">
+           <!--logo-->
+          <div class="logo">
+           <a href="#">
+            <strong>LOGO</strong>
+           </a>
+          </div>
+          <ul class="listing">
+            <li><a href="/home">home</a></li>
+            <li><a href="/about">about us</a></li>
+            <li><a href="/contact">contact us</a></li>
+          </ul>
+          <div class="user">
+           <a href="http://">username</a>
+          </div>
+       </div>
+      </nav>
+    </header>
+    <section class="contact-section">
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2 class="section-title">Get in Touch</h2>
+            <p>Have a stubborn stain or a special request? Drop us a line and we’ll get back to you faster than a spin cycle.</p>
+            
+            <div class="info-details">
+                <div class="info-item">
+                    <strong>📍 Visit Us:</strong>
+                    <p>123 Fresh Lane, Bubbleside, NY 10012</p>
+                </div>
+                <div class="info-item">
+                    <strong>📞 Call or Text:</strong>
+                    <p>(555) 123-4567</p>
+                </div>
+                <div class="info-item">
+                    <strong>⏰ Laundry Hours:</strong>
+                    <p>Mon - Fri: 7am - 9pm<br>Sat - Sun: 9am - 6pm</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+            <form id="laundry-contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="hello@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Interested In</label>
+                    <select id="service" name="service">
+                        <option value="wash-fold">Wash & Fold</option>
+                        <option value="dry-clean">Dry Cleaning</option>
+                        <option value="pickup">Scheduled Pickup</option>
+                        <option value="other">Other Inquiry</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+</html>

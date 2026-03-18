@@ -1,0 +1,12 @@
+{
+  "name": "task-06",
+  "version": "1.0.0",
+  "description": "for creating server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Ankita Mishra",
+  "license": "ISC"
+}
